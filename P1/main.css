@@ -14,10 +14,14 @@ html {
 .art {
     width: 350px;
     height: 400px;
-    background-color: lightgrey;
+    background-color: white;
     border: 2px solid black;
 }
 
 .art:hover {
     background-color: blueviolet;
+}
+
+#rect:hover {
+    background-color: blue;
 }
