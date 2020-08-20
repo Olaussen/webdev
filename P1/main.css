@@ -1,3 +1,23 @@
 html {
-    background: #ccc;
+    background: #f1f1f1;
+}
+
+#maincontainer {
+    text-align: center;
+}
+
+#pictures {
+    display: flex;
+    justify-content: space-around;
+}
+
+.art {
+    width: 350px;
+    height: 400px;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+.art:hover {
+    background-color: blueviolet;
 }
