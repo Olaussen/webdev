@@ -3,6 +3,10 @@ html {
     background-image: url("images/fabric.jpg");
 }
 
+h2 {
+    text-align: center;
+}
+
 #container {
     background-image: url("images/paper_fibers.png");
     max-width: 80%;
@@ -24,7 +28,7 @@ html {
     justify-content: center;
 }
 
-#information {
+#artist {
     text-align: left;
     margin: 0 auto;
     max-width: 60%;
