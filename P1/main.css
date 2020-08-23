@@ -1,19 +1,44 @@
 html {
-    background: #f1f1f1;
+    font-family: Raleway, serif;
+    background-image: url("images/fabric.jpg");
 }
 
-#maincontainer {
+#container {
+    background-image: url("images/paper_fibers.png");
+    min-width: 750px;
+    max-width: 80%;
+    height: 100%;
+    margin: 5% auto;
+    padding: 70px;
     text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    #pictures {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #pictures {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#information {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 60%;
 }
 
 .art {
     width: 350px;
     height: 400px;
     background-color: white;
-    border: 2px solid black;
+    margin: 20px;
+}
+
+.line {
+    width: 70%;
+    border-top: 3px double #8c8b8b;
 }
