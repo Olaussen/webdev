@@ -5,7 +5,6 @@ html {
 
 #container {
     background-image: url("images/paper_fibers.png");
-    min-width: 750px;
     max-width: 80%;
     height: 100%;
     margin: 5% auto;
