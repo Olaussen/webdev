@@ -3,6 +3,8 @@
 const canvas = document.getElementById("canvas-art")
 const $canvas = $("#canvas-art")
 const $svg = $("#svg-art")
+const $button = $("#button")
+const $doc_container = $("#doc-container")
 const ctx = canvas.getContext("2d")
 
 /**
@@ -193,6 +195,7 @@ function frameHoverCanvas(hovering) {
 $("document").ready(() => {
     initiateCanvasArt()
     drawSvgArt(false)
+    $button.html("<span>Show documentation</span>")
 
     // Hover listener for the canvas art
     $canvas.hover(() => { frameHoverCanvas(true) }, () => { frameHoverCanvas(false) })
@@ -203,10 +206,23 @@ $("document").ready(() => {
     })
 
     // Hover listener for the SVG art
-    $svg.hover(() => { frameHoverSVG(true) }, () => { frameHoverSVG(false) })
+    $svg.hover(() => {frameHoverSVG(true) }, () => { frameHoverSVG(false) })
 
     // Click listener for the SVG art
     $svg.click(() => {
         drawSvgArt(true)
+    })
+
+    // CSS changes for hover, mousedown (click start) and mouse up (click end)
+    $button.hover(() => {$button.css("background", "skyblue")}, ()=> {$button.css("background", "url('images/paper_fibers.png')")})
+    $button.mousedown(() => {$button.css("background", "#c16655")})
+    $button.mouseup(() => {$button.css("background", "skyblue")})
+
+    // Click listener for documentation button
+    $button.click(() => {
+        let child = !$doc_container.is(":visible") ? "<span>Hide documentation</span>" : "<span>Show documentation</span>"
+        $doc_container.css("display", $doc_container.is(":visible") ? "none" : "block")
+        $button.html(child)
+        $button.css($button.css("background", "url('images/paper_fibers.png')"))
     })
 })
