@@ -220,9 +220,9 @@ $("document").ready(() => {
 
     // Click listener for documentation button
     $button.click(() => {
-        let child = !$doc_container.is(":visible") ? "<span>Hide documentation</span>" : "<span>Show documentation</span>"
+        const child = !$doc_container.is(":visible") ? "<span>Hide documentation</span>" : "<span>Show documentation</span>"
         $doc_container.css("display", $doc_container.is(":visible") ? "none" : "block")
-        $button.html(child)
         $button.css($button.css("background", "url('images/paper_fibers.png')"))
+        $button.html(child)
     })
 })

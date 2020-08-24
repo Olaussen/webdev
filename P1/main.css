@@ -28,6 +28,8 @@ h2 {
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
     background-image: url("images/paper_fibers.png");
     min-width: 400px;
     max-width: 80%;
