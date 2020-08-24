@@ -3,12 +3,20 @@ html {
     background-image: url("images/fabric.jpg");
 }
 
-h2 {
+h1,
+h2,
+h3 {
     text-align: center;
+    text-shadow: 1px 1px 2px #120000;
+}
+
+h2 {
+    padding: 20px;
 }
 
 #container {
     background-image: url("images/paper_fibers.png");
+    min-width: 400px;
     max-width: 80%;
     height: 100%;
     margin: 5% auto;
@@ -23,14 +31,22 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 575px) {
+    #container {
+        padding: 30px;
+    }
+}
+
 #pictures {
     display: flex;
     justify-content: center;
 }
 
-#artist {
+#artist,
+#exhibition {
     text-align: left;
     margin: 0 auto;
+    min-width: 400px;
     max-width: 60%;
 }
 
@@ -39,9 +55,19 @@ h2 {
     height: 400px;
     background-color: white;
     margin: 20px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.6), 0 20px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.largeline {
+    width: 70%;
+    border-top: 3px double #8c8b8b;
+}
+
+.middleline {
+    width: 40%;
+    border-top: 3px double #8c8b8b;
 }
 
 .line {
-    width: 70%;
-    border-top: 3px double #8c8b8b;
+    width: 20%;
 }
