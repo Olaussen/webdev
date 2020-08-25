@@ -61,9 +61,63 @@
                 <h2>Documentation</h2>
                 <hr class="middleline">
                 <div id="documentation">
+                    <h3>CSS layout</h3>
+                    <p>
+                        All of the styling for the website is located inside the <i>main.css</i> file located in the same directory as the <i>index.html</i> and <i>index.js</i> files. Every HTML element are children of the main container-div with id -
+                        <i><u>container</u></i>. This div has <i>display: flex</i> with <i>flex-direction: column</i> which places child-elements inside it in column (top to bottom). This is of course what we want, as the website is vertical, not horizontal.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        I purposely wanted the the styling to resemble a sheet of paper - as this is both clean and well-presented. The color-scheme combined with different sizes of horizontal lines to seperate the different parts of the website makes it easy on the eyes, and
+                        simple to read.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        The two pictures (Canvas and SVG) have both the same class - <i><u>art</u></i> - and they are located inside a div with id - <i><u>pictures</u></i>. When the screen width is wider that <b>950 pixels</b> this div has a normal flex
+                        design (left to right), but when the width shrinks to below <b>950 pixels</b>, it will change its <i>flex-direction</i> to <i>column</i> so that the pictures both have space on the website. When the screen shrinks even more - to
+                        below
+                        <b>575 pixels</b> in width - the padding on the <i><u>container</u></i>-div reduces from <b>70 pixels</b> to <b>30 pixels</b> to fit the page. All this helps to dynamically change the website to look optimal on all kinds of devices
+                        and screens. Other than this, there are no other special styling than the standard <i>padding/border/margin</i> etc. to make the page visually pleasing.
+                    </p>
+
+                    <h3>HTML5 canvas and SVG</h3>
+                    <hr class="line">
+                    <h4>Canvas</h4>
+                    <p>
+                        I initiated the HTML5 Canvas element with id - <i><u>canvas-art</u></i> - in the <i>index.html</i> file. Before the JS-script starts the drawing of the motive, it uses a function - <i><b>matchCanvasPixelsToDisplayPixels() </b></i>-
+                        to make sure that the pixel-resolution of the canvas is 1 to 1 like we want it to be. When this is done the canvas behaves as we want it to - and the drawing can commence.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        The drawing starts by making the black and white "frame". This is done my using the <i>.fillRect()</i> method for the context and supplying it width the width and height of the canvas - as well as the starting coordinates (which
+                        is x = y = 0 in this case). Only this command will make the whole canvas a black rectangle - which we of course do not want. After this we make a <i>.clearRect()</i> method call to make a white rectangle in the middle - followed
+                        by a <i>.strokeRect()</i> method call to make the lined-rectangle in between. This makes the illution of a frame with an actual canvas inside - and it is on this canvas the motive will be drawn.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        The rest of the drawing-code is located inside the - <i><b>drawCanvasArt(random)</b></i> - function where the <u>random</u> parameter decides if the different parts of the painting should be drawn with random colours. The ground,
+                        sky, house body, windows, door and chimney are all made of rectangles in different sizes and shapes with the <i><b>.fillRect()</b></i> method. The roof of the house is made up of 3 lines where the plane they make up is filled with
+                        colour. The crosses in the windows are made of simple lines. The last element is the doorhandle which is a circle made with the <i><b>.arc()</b></i> method - where the whole arc is drawn because the doorhandle is of course a whole
+                        circle and not just a part of one.
+                    </p>
+
+                    <h3>JavaScript and jQuery</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                         specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                         passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <hr class="line">
+
+                    <h3>Cross browser testing</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <hr class="line">
+
+                    <h3>Inspiration and sources</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <hr class="line">
                 </div>
             </div>
             <div id="button"></div>

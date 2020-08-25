@@ -8,7 +8,7 @@ const $doc_container = $("#doc-container")
 const ctx = canvas.getContext("2d")
 
 /**
- * Will fix the pixelresolution of the canvas if it is not already.
+ * Will fix the pixel-resolution of the canvas if it is not already.
  * Sometimes the coordinate system of the canvas does not behave as one would think.
  */
 function matchCanvasPixelsToDisplayPixels() {
@@ -220,9 +220,10 @@ $("document").ready(() => {
 
     // Click listener for documentation button
     $button.click(() => {
-        const child = !$doc_container.is(":visible") ? "<span>Hide documentation</span>" : "<span>Show documentation</span>"
-        $doc_container.css("display", $doc_container.is(":visible") ? "none" : "block")
-        $button.css($button.css("background", "url('images/paper_fibers.png')"))
+        const visible = $doc_container.is(":visible")
+        const child = !visible ? "<span>Hide documentation</span>" : "<span>Show documentation</span>"
+        $doc_container.css("display", visible ? "none" : "block")
+        $button.css("background", "url('images/paper_fibers.png')")
         $button.html(child)
     })
 })
