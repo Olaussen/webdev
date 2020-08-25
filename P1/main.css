@@ -33,7 +33,7 @@ h2 {
 }
 
 #doc-container {
-    display: block;
+    display: none;
 }
 
 #button {

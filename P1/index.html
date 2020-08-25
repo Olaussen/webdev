@@ -14,25 +14,25 @@
     <div id="container">
         <hr class="largeline">
         <h1>The art of seduction</h1>
-        <h4><i>by Hans von Schlongenhammer</i></h4>
+        <h4><em>by Hans von Schlongenhammer</em></h4>
         <hr class="largeline">
         <div class="smallcontainer">
             <h2>The short life of a master</h2>
             <hr class="middleline">
             <p>
-                Born into the jewish family <i>von Schlongenhammer</i> in South-east Austria during the great depression of 1929, Hans quickly discovered that one of the few things that took his mind away from the horrific events surrounding him at the
-                time was art. Of course, like most other masters of their craft, he did not know what impact he would have on millions of lives once his art was open to the public.
+                Born into the jewish family <em>von Schlongenhammer</em> in South-east Austria during the great depression of 1929, Hans quickly discovered that one of the few things that took his mind away from the horrific events surrounding him at
+                the time was art. Of course, like most other masters of their craft, he did not know what impact he would have on millions of lives once his art was open to the public.
             </p>
             <hr class="line">
             <p>
-                His art was not as popular when he was alive. After he died though, people found his art to be not just beautiful, but almost <i><b>heartbreaking</b></i>. He transformed the pain he felt during his tormented life into ecstatic beauty.
-                That is something which does not comes easily to a man born and raised during one of the harshest times in our history. No one had ever done it before him, and perhaps no one will ever again.
+                His art was not as popular when he was alive. After he died though, people found his art to be not just beautiful, but almost <em><strong>heartbreaking</strong></em>. He transformed the pain he felt during his tormented life into ecstatic
+                beauty. That is something which does not comes easily to a man born and raised during one of the harshest times in our history. No one had ever done it before him, and perhaps no one will ever again.
             </p>
             <hr class="line">
             <p>
                 Hans von Schlongenhammer was only 22 years old when he died by suicide in 1951. During those years he painted hundreds of paitings. This exhibition shows perhaps one of the most recognizable of them all. Painted in 1944, when Hans was only 15 years old,
-                <i><b>The fieldhouse</b></i> depictures the house he grew up with on the fields of <i><b>Eferding</b></i> with his older sister after his parents died at the hands of the Germans during the Second World War. It is one of 5 paintings in
-                a collection he called <i><b>The art of seduction</b></i>.
+                <em><strong>The fieldhouse</strong></em> depictures the house he grew up with on the fields of <em><strong>Eferding</strong></em> with his older sister after his parents died at the hands of the Germans during the Second World War. It
+                is one of 5 paintings in a collection he called <em><strong>The art of seduction</strong></em>.
             </p>
             <hr class="line">
             <p>
@@ -46,11 +46,11 @@
             <hr class="middleline">
             <div id="pictures">
                 <div class="artcontainer">
-                    <h3><i>The fieldhouse</i> with Canvas</h5>
+                    <h3><em>The fieldhouse</em> with Canvas</h5>
                         <canvas id="canvas-art" class="art"></canvas>
                 </div>
                 <div class="artcontainer">
-                    <h3><i>The fieldhouse</i> with SVG</h5>
+                    <h3><em>The fieldhouse</em> with SVG</h5>
                         <svg id="svg-art" class="art"></svg>
                 </div>
             </div>
@@ -63,49 +63,113 @@
                 <div id="documentation">
                     <h3>CSS layout</h3>
                     <p>
-                        All of the styling for the website is located inside the <i>main.css</i> file located in the same directory as the <i>index.html</i> and <i>index.js</i> files. Every HTML element are children of the main container-div with id -
-                        <i><u>container</u></i>. This div has <i>display: flex</i> with <i>flex-direction: column</i> which places child-elements inside it in column (top to bottom). This is of course what we want, as the website is vertical, not horizontal.
+                        All of the styling for the website is located inside the <em>main.css</em> file located in the same directory as the <em>index.html</em> and <em>index.js</em> files. Every HTML element are children of the main container-div with
+                        id -
+                        <em><u>container</u></em>. This div has <em>display: flex</em> with <em>flex-direction: column</em> which places child-elements inside it in column (top to bottom). This is of course what we want, as the website is vertical, not
+                        horizontal.
                     </p>
                     <hr class="line">
                     <p>
-                        I purposely wanted the the styling to resemble a sheet of paper - as this is both clean and well-presented. The color-scheme combined with different sizes of horizontal lines to seperate the different parts of the website makes it easy on the eyes, and
+                        I purposely wanted the the styling to resemble a sheet of paper - as this is both clean and well-presented. The colour-scheme combined with different sizes of horizontal lines to seperate the different parts of the website makes it easy on the eyes, and
                         simple to read.
                     </p>
                     <hr class="line">
                     <p>
-                        The two pictures (Canvas and SVG) have both the same class - <i><u>art</u></i> - and they are located inside a div with id - <i><u>pictures</u></i>. When the screen width is wider that <b>950 pixels</b> this div has a normal flex
-                        design (left to right), but when the width shrinks to below <b>950 pixels</b>, it will change its <i>flex-direction</i> to <i>column</i> so that the pictures both have space on the website. When the screen shrinks even more - to
-                        below
-                        <b>575 pixels</b> in width - the padding on the <i><u>container</u></i>-div reduces from <b>70 pixels</b> to <b>30 pixels</b> to fit the page. All this helps to dynamically change the website to look optimal on all kinds of devices
-                        and screens. Other than this, there are no other special styling than the standard <i>padding/border/margin</i> etc. to make the page visually pleasing.
+                        The two pictures (Canvas and SVG) have both the same class - <em><u>art</u></em> - and they are located inside a div with id - <em><u>pictures</u></em>. When the screen width is wider that <strong>950 pixels</strong> this div has
+                        a normal flex design (left to right), but when the width shrinks to below <strong>950 pixels</strong>, it will change its <em>flex-direction</em> to <em>column</em> so that the pictures both have space on the website. When the
+                        screen shrinks even more - to below
+                        <strong>575 pixels</strong> in width - the padding on the <em><u>container</u></em>-div reduces from <strong>70 pixels</strong> to <strong>30 pixels</strong> to fit the page. All this helps to dynamically change the website to
+                        look optimal on all kinds of devices and screens. Other than this, there are no other special styling than the standard <em>padding/border/margin</em> etc. to make the page visually pleasing.
                     </p>
 
                     <h3>HTML5 canvas and SVG</h3>
-                    <hr class="line">
                     <h4>Canvas</h4>
                     <p>
-                        I initiated the HTML5 Canvas element with id - <i><u>canvas-art</u></i> - in the <i>index.html</i> file. Before the JS-script starts the drawing of the motive, it uses a function - <i><b>matchCanvasPixelsToDisplayPixels() </b></i>-
+                        I initiated the HTML5 Canvas element with id - <em><u>canvas-art</u></em> - in the <em>index.html</em> file. Before the JS-script starts the drawing of the motive, it uses a function - <em><strong>matchCanvasPixelsToDisplayPixels() </strong></em>-
                         to make sure that the pixel-resolution of the canvas is 1 to 1 like we want it to be. When this is done the canvas behaves as we want it to - and the drawing can commence.
                     </p>
                     <hr class="line">
                     <p>
-                        The drawing starts by making the black and white "frame". This is done my using the <i>.fillRect()</i> method for the context and supplying it width the width and height of the canvas - as well as the starting coordinates (which
-                        is x = y = 0 in this case). Only this command will make the whole canvas a black rectangle - which we of course do not want. After this we make a <i>.clearRect()</i> method call to make a white rectangle in the middle - followed
-                        by a <i>.strokeRect()</i> method call to make the lined-rectangle in between. This makes the illution of a frame with an actual canvas inside - and it is on this canvas the motive will be drawn.
+                        The drawing starts by making the black and white "frame". This is done my using the <em>.fillRect()</em> method for the context and supplying it width the width and height of the canvas - as well as the starting coordinates (which
+                        is x = y = 0 in this case). Only this command will make the whole canvas a black rectangle - which we of course do not want. After this we make a <em>.clearRect()</em> method call to make a white rectangle in the middle - followed
+                        by a <em>.strokeRect()</em> method call to make the lined-rectangle in between. This makes the illution of a frame with an actual canvas inside - and it is on this canvas the motive will be drawn.
                     </p>
                     <hr class="line">
                     <p>
-                        The rest of the drawing-code is located inside the - <i><b>drawCanvasArt(random)</b></i> - function where the <u>random</u> parameter decides if the different parts of the painting should be drawn with random colours. The ground,
-                        sky, house body, windows, door and chimney are all made of rectangles in different sizes and shapes with the <i><b>.fillRect()</b></i> method. The roof of the house is made up of 3 lines where the plane they make up is filled with
-                        colour. The crosses in the windows are made of simple lines. The last element is the doorhandle which is a circle made with the <i><b>.arc()</b></i> method - where the whole arc is drawn because the doorhandle is of course a whole
-                        circle and not just a part of one.
+                        The rest of the drawing-code is located inside the - <em><strong>drawCanvasArt(random)</strong></em> - function where the <u>random</u> parameter decides if the different parts of the painting should be drawn with random colours.
+                        The ground, sky, house body, windows, door and chimney are all made of rectangles in different sizes and shapes with the <em><strong>.fillRect()</strong></em> method. The roof of the house is made up of three lines where the plane
+                        they make up is filled with colour. The crosses in the windows are made of simple lines. The last element is the doorhandle which is a circle made with the <em><strong>.arc()</strong></em> method - where the whole arc is drawn
+                        because the doorhandle is of course a complete circle and not just a part of one.
+                    </p>
+
+                    <h4>SVG</h4>
+                    <p>
+                        Just like with the canvas I initiated the SVG element with an id - <em><u>svg-art</u></em> - in the <em>index.html</em> file. The way the picture is drawn is very similar to the canvas one in that it uses basic shapes filled with
+                        colour to do the job. Unlike the canvas art, the SVG art is not drawn using a JS-api, but rather in plain HTML. This said - no shapes are drawn inside the <em>index.html</em> file as I use the jQuery <em><strong>.html()</strong></em>                        method to fill the element with HTML text.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        SVG is easy to draw with as it do not require you to go through many steps to get a shape on the board. I used the same logic when drawing the SVG as I did with the canvas api. The ground and the sky are rectangles - the same with the house body, windows,
+                        door and chimney. Just as the canvas api uses the <em><strong>.fillStyle</strong></em> property to choose the colour of the filling, the SVG HTML-elements have their own <em>fill</em> property inside their
+                        declaration, making it easy. SVG also have its own 'ellipse' declaration - making it easier to make circles than the canvas. The same goes for the roof - which is a 'polygon' - not three lines with filling.
+                    </p>
+                    <hr class="line">
+                    <p>
+                        The frame of the SVG is made up of three rectangles, just like the canvas is. One thing I really like is that you can give individual shapes ids. This makes it easier to change color of these specific shapes when a user interacts with the artwork. This
+                        functionality is not as easy to to with the canvas api. One thing which is pretty similar though is that when the user does interract and the colours change, most of the canvas and SVG art is overwritten by another layer of colours.
+                        You can look at it as painting over a painting with new paint - over and over again each interaction. With SVG you can use the given id of an element to change its colours, and therefore not overwrite everything. That said - all
+                        the colours are randomized on click except the frame - which turns gold!
+
                     </p>
 
                     <h3>JavaScript and jQuery</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>
+                        All the code I've written for the website is located inside the <em>index.js</em> file. The file is included into the <em>index.html</em> file at the end of the <u>body</u> tag. The jQuery library is included in the <u>head</u>                        tag, as I want it to be loaded before my code (which uses it).
+                    </p>
                     <hr class="line">
+                    <p>
+                        At the top of the <em>index.js</em> file sits the global constants. These are for the canvas api and use of jQuery later. Instead of referencing the jQuery elements multiple times, I made these constants for easy access. All the
+                        constants and variables used later in relation to jQuery starts with a <em><strong>$</strong></em>.
+                    </p>
+                    <h4>jQuery</h4>
+                    <p>
+                        In this project I use jQuery to solve three problems:
+                        <ul>
+                            <li>Filling elements with HTML</li>
+                            <li>Editing CSS</li>
+                            <li>Adding listeners (mouseevents)</li>
+                        </ul>
+                        <p>
+                            As I said when talking about SVG I use the <em><strong>.html()</strong></em> method to inject HTML into the SVG element. If this was to be done in plain JavaScript it would take a lot more steps and code to do. With jQuery
+                            I just had to put in the HTML as a string parameter and <em>voalá</em> - it appears.
+                        </p>
+                        <p>
+                            Editing the CSS is used when hovering and clicking the interactive parts of the website. You can see this when hovering/clicking the artwork - or the button used to display this documentation. The <em><strong>.css() </strong></em>method
+                            is used the same way as writing actual css. You pass in the property name as the first parameter, and the value as the second. It will then change the css of the chosen element to match the provided parameters.
+                        </p>
+                        <p>
+                            Lastly, jQuery is used for making listeners for these elements:
+                            <ul>
+                                <li>Canvas art</li>
+                                <li>SVG art</li>
+                                <li>Documention show/hide button</li>
+                            </ul>
+                            <p>
+                                For the hover listener the <em><strong>.hover()</strong></em> method is used. It will ask for two functions as parameters. What to do when the mouse enters the element and what to do when it leaves. In this case this is
+                                quite simple. When the mouse enters the element some sort of colour change somewhere happens to indicate it - and when it leaves everything goes back to the way it was before the hover started. You can see this when hovering
+                                the artwork and the documentation button.
+                            </p>
+                            <p>
+                                For the click listener the <em><strong>.click()</strong></em> method is used. This is very simple as you just provide what function you want it to run when the element is clicked. When clicking the artwork - the colours
+                                will randomize. When clicking the documentation button, the documentation will either show or hide depending on the current visibility. The text on the button will also accordingly to display the correct instructions.
+                            </p>
+                            <p>
+                                I have also used the <em><strong>.mousedown()</strong></em> and <em><strong>.mouseup()</strong></em> methods to change the colour of the documentation button as you click. When the mousebutton is pressed -the colour will
+                                change - and when its lifted, it will go back to the hover colour. This is to indicate to the user that the button is in fact being pressed.
+                            </p>
+                        </p>
+
+                    </p>
 
                     <h3>Cross browser testing</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type

@@ -1,11 +1,11 @@
 
 // Global constants and variables
 const canvas = document.getElementById("canvas-art")
+const ctx = canvas.getContext("2d")
 const $canvas = $("#canvas-art")
 const $svg = $("#svg-art")
 const $button = $("#button")
 const $doc_container = $("#doc-container")
-const ctx = canvas.getContext("2d")
 
 /**
  * Will fix the pixel-resolution of the canvas if it is not already.
