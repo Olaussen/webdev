@@ -85,6 +85,6 @@ h2 {
 
 @media screen and (max-width: 575px) {
     #container {
-        padding: 30px;
+        padding: 10px;
     }
 }

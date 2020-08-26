@@ -78,7 +78,7 @@
                         The two pictures (Canvas and SVG) have both the same class - <em><u>art</u></em> - and they are located inside a div with id - <em><u>pictures</u></em>. When the screen width is wider that <strong>950 pixels</strong> this div has
                         a normal flex design (left to right), but when the width shrinks to below <strong>950 pixels</strong>, it will change its <em>flex-direction</em> to <em>column</em> so that the pictures both have space on the website. When the
                         screen shrinks even more - to below
-                        <strong>575 pixels</strong> in width - the padding on the <em><u>container</u></em>-div reduces from <strong>70 pixels</strong> to <strong>30 pixels</strong> to fit the page. All this helps to dynamically change the website to
+                        <strong>575 pixels</strong> in width - the padding on the <em><u>container</u></em>-div reduces from <strong>70 pixels</strong> to <strong>10 pixels</strong> to fit the page. All this helps to dynamically change the website to
                         look optimal on all kinds of devices and screens. Other than this, there are no other special styling than the standard <em>padding/border/margin</em> etc. to make the page visually pleasing.
                     </p>
 
@@ -141,12 +141,14 @@
                         </ul>
                         <p>
                             As I said when talking about SVG I use the <em><strong>.html()</strong></em> method to inject HTML into the SVG element. If this was to be done in plain JavaScript it would take a lot more steps and code to do. With jQuery
-                            I just had to put in the HTML as a string parameter and <em>voalá</em> - it appears.
+                            I just had to put in the HTML as a string parameter and <em>voalá</em> - it appears. The same method is used to change the text on the documentation button when clicking.
                         </p>
+                        <hr class="line">
                         <p>
                             Editing the CSS is used when hovering and clicking the interactive parts of the website. You can see this when hovering/clicking the artwork - or the button used to display this documentation. The <em><strong>.css() </strong></em>method
                             is used the same way as writing actual css. You pass in the property name as the first parameter, and the value as the second. It will then change the css of the chosen element to match the provided parameters.
                         </p>
+                        <hr class="line">
                         <p>
                             Lastly, jQuery is used for making listeners for these elements:
                             <ul>
@@ -157,30 +159,48 @@
                             <p>
                                 For the hover listener the <em><strong>.hover()</strong></em> method is used. It will ask for two functions as parameters. What to do when the mouse enters the element and what to do when it leaves. In this case this is
                                 quite simple. When the mouse enters the element some sort of colour change somewhere happens to indicate it - and when it leaves everything goes back to the way it was before the hover started. You can see this when hovering
-                                the artwork and the documentation button.
+                                the <u>artwork</u> and the <u>documentation button</u>.
                             </p>
                             <p>
-                                For the click listener the <em><strong>.click()</strong></em> method is used. This is very simple as you just provide what function you want it to run when the element is clicked. When clicking the artwork - the colours
-                                will randomize. When clicking the documentation button, the documentation will either show or hide depending on the current visibility. The text on the button will also accordingly to display the correct instructions.
+                                For the click listener the <em><strong>.click()</strong></em> method is used. This is very simple as you just provide what function you want it to run when the element is clicked. When clicking the <u>artwork</u> - the
+                                colours will randomize. When clicking the <u>documentation button</u>, the documentation will either show or hide depending on the current visibility. The text on the button will also accordingly to display the correct
+                                instructions.
                             </p>
                             <p>
-                                I have also used the <em><strong>.mousedown()</strong></em> and <em><strong>.mouseup()</strong></em> methods to change the colour of the documentation button as you click. When the mousebutton is pressed -the colour will
-                                change - and when its lifted, it will go back to the hover colour. This is to indicate to the user that the button is in fact being pressed.
+                                I have also used the <em><strong>.mousedown()</strong></em> and <em><strong>.mouseup()</strong></em> methods to change the colour of the <u>documentation button</u> as you click. When the mousebutton is pressed -the background
+                                colour will change - and when its lifted, it will go back to the hover colour. This is to indicate to the user that the button is in fact being pressed.
                             </p>
                         </p>
-
+                        <hr class="line">
+                        <p>
+                            More specific comments and documentation (JSDoc) can be found in the actual code itself. I have deliberately done most of the DOM-manipulation in JavaScript rather than plain HTML - as I personally think this is a better and cleaner way of doing it. When
+                            the elements are static though, I do it in HTML - like this paragraph.
+                        </p>
                     </p>
 
                     <h3>Cross browser testing</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>The website has been tested on three browsers. <em>Google chrome, Mozilla Firefox</em> and <em>Microsoft Edge</em>. This was done by opening the <em>index.html</em> file in the browser and interacting with the website. I had to make
+                        sure that clicking and hovering the artwork and the documentation button worked as it should. Also, I tested resizing the window on the browsers to check that the website looked as it should even on tiny windows. I also checked
+                        the console for each browser - making sure that there was no warnings or errors. The firefox window can be shrinked to a smaller width than the two others - and I therefore had to make sure that the elements fit the window.</p>
                     <hr class="line">
 
                     <h3>Inspiration and sources</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>
+                        <ul>
+                            <li>
+                                I used <a href="https://developer.mozilla.org/" target="#blank">MDN</a> for simple code checkups on the canvas api and SVG.
+                            </li>
+                            <li>
+                                I used <a href="https://www.youtube.com/watch?v=ScoURsEM_yU&t=2849s" target="#blank">this</a> YouTube tutorial for learning the basics of jQuery
+                            </li>
+                            <li>
+                                I used a game called <a href="https://flexboxfroggy.com/" taget="#blank">Flexboxfroggy</a> to refresh my knowledge on the <em>flex</em> attribute in CSS.
+                            </li>
+                            <li>
+                                I used a code snippet from <a href="https://stackoverflow.com/questions/4938346/canvas-width-and-height-in-html5" target="#blank">this</a> Stackoverflow thread to solve the problem with the canvas pixels - by user <em><strong>gman</strong></em>
+                            </li>
+                        </ul>
+                    </p>
                     <hr class="line">
                 </div>
             </div>

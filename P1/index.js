@@ -163,21 +163,33 @@ function drawSvgArt(random) {
                ${getArtwork(random)}`)
 }
 
+/**
+ * This function will change the color of the SVG frame to gold or black depending on the hoverstatus
+ * @param {boolean} hovering - true if the user is hovering the SVG art
+ */
 function frameHoverSVG(hovering) {
     const $svgframe = $("#svgframe")
+
+    // Changing the frame to gold
     if (hovering) {
         $svgframe.css("fill", "gold")
         return
     }
+    // Changing the frame to black and redraw the motive
     $svgframe.css("fill", "black")
     drawSvgArt(false)
 }
 
+/**
+ * This function will change the color of the canvas frame to gold or black depending on the hoverstatus
+ * @param {boolean} hovering - true if the user is hovering the canvas art
+ */
 function frameHoverCanvas(hovering) {
     const w = canvas.width
     const h = canvas.height
     const offset = w / 10
 
+    // Changing the frame to gold or black depending on hoverstatus
     ctx.fillStyle = hovering ? "gold" : "black"
     ctx.fillRect(0, 0, w, h)
     ctx.clearRect(offset, offset, w - 2 * offset, h - 2 * offset)
