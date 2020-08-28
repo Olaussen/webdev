@@ -30,7 +30,7 @@
             </p>
             <hr class="line">
             <p>
-                Hans von Schlongenhammer was only 22 years old when he died by suicide in 1951. During those years he painted hundreds of paitings. This exhibition shows perhaps one of the most recognizable of them all. Painted in 1944, when Hans was only 15 years old,
+                Hans von Schlongenhammer was only 22 years old when he died by suicide in 1951. During those years he painted hundreds of paintings. This exhibition shows perhaps one of the most recognizable of them all. Painted in 1944, when Hans was only 15 years old,
                 <em><strong>The fieldhouse</strong></em> depictures the house he grew up with on the fields of <em><strong>Eferding</strong></em> with his older sister after his parents died at the hands of the Germans during the Second World War. It
                 is one of 5 paintings in a collection he called <em><strong>The art of seduction</strong></em>.
             </p>
@@ -63,15 +63,15 @@
                 <div id="documentation">
                     <h3>CSS layout</h3>
                     <p>
-                        All of the styling for the website is located inside the <em>main.css</em> file located in the same directory as the <em>index.html</em> and <em>index.js</em> files. Every HTML element are children of the main container-div with
-                        id -
-                        <em><u>container</u></em>. This div has <em>display: flex</em> with <em>flex-direction: column</em> which places child-elements inside it in column (top to bottom). This is of course what we want, as the website is vertical, not
+                        All of the styling of the website is located in the <em>main.css</em> file located in the same directory as the <em>index.html</em> and <em>index.js</em> files. Every HTML element are children of the main container-div with id
+                        -
+                        <em><u>container</u></em>. This div has <em>display: flex</em> with <em>flex-direction: column</em>, which places child-elements inside it in column (top to bottom). This is of course what we want, as the website is vertical, not
                         horizontal.
                     </p>
                     <hr class="line">
                     <p>
-                        I purposely wanted the the styling to resemble a sheet of paper - as this is both clean and well-presented. The colour-scheme combined with different sizes of horizontal lines to seperate the different parts of the website makes it easy on the eyes, and
-                        simple to read.
+                        I purposely wanted the styling to resemble a sheet of paper - as this is both clean and well-presented. The colour scheme combined with different sizes of horizontal lines to separate the different parts of the website makes it easy on the eyes, and simple
+                        to read.
                     </p>
                     <hr class="line">
                     <p>
@@ -92,14 +92,14 @@
                     <p>
                         The drawing starts by making the black and white "frame". This is done my using the <em>.fillRect()</em> method for the context and supplying it width the width and height of the canvas - as well as the starting coordinates (which
                         is x = y = 0 in this case). Only this command will make the whole canvas a black rectangle - which we of course do not want. After this we make a <em>.clearRect()</em> method call to make a white rectangle in the middle - followed
-                        by a <em>.strokeRect()</em> method call to make the lined-rectangle in between. This makes the illution of a frame with an actual canvas inside - and it is on this canvas the motive will be drawn.
+                        by a <em>.strokeRect()</em> method call to make the lined-rectangle in between. This makes the illusion of a frame with an actual canvas inside - and it is on this canvas the motive will be drawn.
                     </p>
                     <hr class="line">
                     <p>
                         The rest of the drawing-code is located inside the - <em><strong>drawCanvasArt(random)</strong></em> - function where the <u>random</u> parameter decides if the different parts of the painting should be drawn with random colours.
                         The ground, sky, house body, windows, door and chimney are all made of rectangles in different sizes and shapes with the <em><strong>.fillRect()</strong></em> method. The roof of the house is made up of three lines where the plane
-                        they make up is filled with colour. The crosses in the windows are made of simple lines. The last element is the doorhandle which is a circle made with the <em><strong>.arc()</strong></em> method - where the whole arc is drawn
-                        because the doorhandle is of course a complete circle and not just a part of one.
+                        they make up is filled with colour. The crosses in the windows are made of simple lines. The last element is the door handle which is a circle made with the <em><strong>.arc()</strong></em> method - where the whole arc is drawn
+                        because the door handle is of course a complete circle and not just a part of one.
                     </p>
 
                     <h4>SVG</h4>
@@ -116,7 +116,7 @@
                     <hr class="line">
                     <p>
                         The frame of the SVG is made up of three rectangles, just like the canvas is. One thing I really like is that you can give individual shapes ids. This makes it easier to change color of these specific shapes when a user interacts with the artwork. This
-                        functionality is not as easy to to with the canvas api. One thing which is pretty similar though is that when the user does interract and the colours change, most of the canvas and SVG art is overwritten by another layer of colours.
+                        functionality is not as easy to to with the canvas api. One thing which is pretty similar though is that when the user does interact and the colours change, most of the canvas and SVG art is overwritten by another layer of colours.
                         You can look at it as painting over a painting with new paint - over and over again each interaction. With SVG you can use the given id of an element to change its colours, and therefore not overwrite everything. That said - all
                         the colours are randomized on click except the frame - which turns gold!
 
@@ -137,7 +137,7 @@
                         <ul>
                             <li>Filling elements with HTML</li>
                             <li>Editing CSS</li>
-                            <li>Adding listeners (mouseevents)</li>
+                            <li>Adding listeners (mouse events)</li>
                         </ul>
                         <p>
                             As I said when talking about SVG I use the <em><strong>.html()</strong></em> method to inject HTML into the SVG element. If this was to be done in plain JavaScript it would take a lot more steps and code to do. With jQuery
@@ -154,7 +154,7 @@
                             <ul>
                                 <li>Canvas art</li>
                                 <li>SVG art</li>
-                                <li>Documention show/hide button</li>
+                                <li>Documentation show/hide button</li>
                             </ul>
                             <p>
                                 For the hover listener the <em><strong>.hover()</strong></em> method is used. It will ask for two functions as parameters. What to do when the mouse enters the element and what to do when it leaves. In this case this is
@@ -167,7 +167,7 @@
                                 instructions.
                             </p>
                             <p>
-                                I have also used the <em><strong>.mousedown()</strong></em> and <em><strong>.mouseup()</strong></em> methods to change the colour of the <u>documentation button</u> as you click. When the mousebutton is pressed -the background
+                                I have also used the <em><strong>.mousedown()</strong></em> and <em><strong>.mouseup()</strong></em> methods to change the colour of the <u>documentation button</u> as you click. When the mouse button is pressed -the background
                                 colour will change - and when its lifted, it will go back to the hover colour. This is to indicate to the user that the button is in fact being pressed.
                             </p>
                         </p>
@@ -181,7 +181,7 @@
                     <h3>Cross browser testing</h3>
                     <p>The website has been tested on three browsers. <em>Google chrome, Mozilla Firefox</em> and <em>Microsoft Edge</em>. This was done by opening the <em>index.html</em> file in the browser and interacting with the website. I had to make
                         sure that clicking and hovering the artwork and the documentation button worked as it should. Also, I tested resizing the window on the browsers to check that the website looked as it should even on tiny windows. I also checked
-                        the console for each browser - making sure that there was no warnings or errors. The firefox window can be shrinked to a smaller width than the two others - and I therefore had to make sure that the elements fit the window.</p>
+                        the console for each browser - making sure that there were no warnings or errors. The firefox window can be shrinked to a smaller width than the two others - and I therefore had to make sure that the elements fit the window.</p>
                     <hr class="line">
 
                     <h3>Inspiration and sources</h3>
